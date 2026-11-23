@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Shohei Ohtani</title>
+
+<style>
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al usar el índice */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e8edf5;
+    color: #172d50;
+}
+
+header {
+    background: #002d72;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Estilos para el Índice */
+nav {
+    background: #005aab;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffd100;
+}
+
+.contenedor {
+    background: white;
+    width: 85%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #005aab;
+    border-bottom: 2px solid #e8edf5;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Estilos para la Galería de Imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Estilos para el Video de YouTube */
+.video-contenedor {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.video-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+button {
+    background: #002d72;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #005aab;
+}
+
+footer {
+    background: #002d72;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SHOHEI OHTANI</h1>
+    <p>Una leyenda del béisbol japonés</p>
+</header>
+
+<!-- ÍNDICE DE NAVEGACIÓN -->
+<nav>
+    <a href="#quien-es">¿Quién es?</a>
+    <a href="#trayectoria">Trayectoria</a>
+    <a href="#logros">Logros</a>
+    <a href="#especial">¿Por qué es especial?</a>
+    <a href="#galeria">Galería</a>
+    <a href="#video">Video</a>
+</nav>
+
+<div class="contenedor">
+
+    <h2 id="quien-es">¿Quién es Shohei Ohtani?</h2>
+    <p>
+    Shohei Ohtani es un beisbolista japonés
+    nacido el 5 de julio de 1994 en Japón.
+    Es reconocido por su increíble talento,
+    ya que puede desempeñarse como bateador
+    y lanzador.
+    </p>
+
+    <h2 id="trayectoria">Su trayectoria</h2>
+    <p>
+    Comenzó su carrera profesional en Japón
+    con los Hokkaido Nippon-Ham Fighters.
+    Posteriormente llegó a las Grandes Ligas
+    y jugó con Los Angeles Angels.
+    Actualmente pertenece a Los Angeles Dodgers.
+    </p>
+
+    <h2 id="logros">Sus logros</h2>
+    <ul>
+        <li>Jugador más valioso (MVP).</li>
+        <li>Novato del año en 2018.</li>
+        <li>Campeón de la Serie Mundial.</li>
+        <li>Reconocido por su talento como bateador y lanzador.</li>
+    </ul>
+
+    <h2 id="especial">¿Por qué es especial?</h2>
+    <p>
+    Porque es uno de los pocos jugadores
+    capaces de destacar tanto lanzando
+    como bateando, demostrando su gran
+    habilidad dentro del béisbol.
+    </p>
+
+    <!-- ESPACIO PARA IMÁGENES -->
+    <h2 id="galeria">Galería de imágenes</h2>
+    <div class="galeria">
+        <img src="x.jpg">
+        <img src="p.webp">
+        <img src="s.jpg" >
+        <img src="l.webp">
+        <img src="j.webp">
+    </div>
+
+    <h2 id="video">jugadas (Video)</h2>
+    <div class="video-contenedor">
+        <iframe 
+            src="https://youtube.com/@mlb?si=fc89_VYtuQ9p37qH" 
+            title="Video de Shohei Ohtani" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <h2>Más información</h2>
+    <button onclick="mostrarMensaje()">
+        Conocer más
+    </button>
+
+</div>
+
+<footer>
+    <p>Shohei Ohtani</p>
+</footer>
+
+<script>
+function mostrarMensaje() {
+    alert("¡Shohei Ohtani, una estrella del béisbol!");
+}
+</script>
+
+</body>
+</html>
